@@ -1,0 +1,10 @@
+C:\Users\Alex\source\repos\Flags\Flags\bin\Release\Flags.exe.config
+C:\Users\Alex\source\repos\Flags\Flags\bin\Release\Flags.exe
+C:\Users\Alex\source\repos\Flags\Flags\bin\Release\Flags.pdb
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.csprojAssemblyReference.cache
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.FlagCalculator.resources
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.Properties.Resources.resources
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.csproj.GenerateResource.cache
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.exe
+C:\Users\Alex\source\repos\Flags\Flags\obj\Release\Flags.pdb
