@@ -54,12 +54,20 @@
             this.Checkbox4000 = new System.Windows.Forms.CheckBox();
             this.Checkbox2000 = new System.Windows.Forms.CheckBox();
             this.Checkbox1000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox80000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox40000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox20000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox10000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox8000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox4000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox2000000 = new System.Windows.Forms.CheckBox();
+            this.Checkbox1000000 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 24);
+            this.label1.Location = new System.Drawing.Point(103, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 0;
@@ -67,7 +75,7 @@
             // 
             // TextboxFlag
             // 
-            this.TextboxFlag.Location = new System.Drawing.Point(72, 21);
+            this.TextboxFlag.Location = new System.Drawing.Point(139, 21);
             this.TextboxFlag.Name = "TextboxFlag";
             this.TextboxFlag.Size = new System.Drawing.Size(100, 20);
             this.TextboxFlag.TabIndex = 1;
@@ -164,7 +172,7 @@
             // Checkbox800
             // 
             this.Checkbox800.AutoSize = true;
-            this.Checkbox800.Location = new System.Drawing.Point(51, 311);
+            this.Checkbox800.Location = new System.Drawing.Point(100, 127);
             this.Checkbox800.Name = "Checkbox800";
             this.Checkbox800.Size = new System.Drawing.Size(55, 17);
             this.Checkbox800.TabIndex = 38;
@@ -175,7 +183,7 @@
             // Checkbox400
             // 
             this.Checkbox400.AutoSize = true;
-            this.Checkbox400.Location = new System.Drawing.Point(51, 288);
+            this.Checkbox400.Location = new System.Drawing.Point(100, 104);
             this.Checkbox400.Name = "Checkbox400";
             this.Checkbox400.Size = new System.Drawing.Size(55, 17);
             this.Checkbox400.TabIndex = 37;
@@ -186,7 +194,7 @@
             // Checkbox200
             // 
             this.Checkbox200.AutoSize = true;
-            this.Checkbox200.Location = new System.Drawing.Point(51, 265);
+            this.Checkbox200.Location = new System.Drawing.Point(100, 81);
             this.Checkbox200.Name = "Checkbox200";
             this.Checkbox200.Size = new System.Drawing.Size(55, 17);
             this.Checkbox200.TabIndex = 36;
@@ -197,7 +205,7 @@
             // Checkbox100
             // 
             this.Checkbox100.AutoSize = true;
-            this.Checkbox100.Location = new System.Drawing.Point(51, 242);
+            this.Checkbox100.Location = new System.Drawing.Point(100, 58);
             this.Checkbox100.Name = "Checkbox100";
             this.Checkbox100.Size = new System.Drawing.Size(55, 17);
             this.Checkbox100.TabIndex = 35;
@@ -208,7 +216,7 @@
             // Checkbox800000
             // 
             this.Checkbox800000.AutoSize = true;
-            this.Checkbox800000.Location = new System.Drawing.Point(106, 311);
+            this.Checkbox800000.Location = new System.Drawing.Point(161, 219);
             this.Checkbox800000.Name = "Checkbox800000";
             this.Checkbox800000.Size = new System.Drawing.Size(73, 17);
             this.Checkbox800000.TabIndex = 50;
@@ -219,7 +227,7 @@
             // Checkbox400000
             // 
             this.Checkbox400000.AutoSize = true;
-            this.Checkbox400000.Location = new System.Drawing.Point(106, 288);
+            this.Checkbox400000.Location = new System.Drawing.Point(161, 196);
             this.Checkbox400000.Name = "Checkbox400000";
             this.Checkbox400000.Size = new System.Drawing.Size(73, 17);
             this.Checkbox400000.TabIndex = 49;
@@ -230,7 +238,7 @@
             // Checkbox200000
             // 
             this.Checkbox200000.AutoSize = true;
-            this.Checkbox200000.Location = new System.Drawing.Point(106, 265);
+            this.Checkbox200000.Location = new System.Drawing.Point(161, 173);
             this.Checkbox200000.Name = "Checkbox200000";
             this.Checkbox200000.Size = new System.Drawing.Size(73, 17);
             this.Checkbox200000.TabIndex = 48;
@@ -241,7 +249,7 @@
             // Checkbox100000
             // 
             this.Checkbox100000.AutoSize = true;
-            this.Checkbox100000.Location = new System.Drawing.Point(106, 242);
+            this.Checkbox100000.Location = new System.Drawing.Point(161, 150);
             this.Checkbox100000.Name = "Checkbox100000";
             this.Checkbox100000.Size = new System.Drawing.Size(73, 17);
             this.Checkbox100000.TabIndex = 47;
@@ -252,7 +260,7 @@
             // Checkbox80000
             // 
             this.Checkbox80000.AutoSize = true;
-            this.Checkbox80000.Location = new System.Drawing.Point(106, 219);
+            this.Checkbox80000.Location = new System.Drawing.Point(161, 127);
             this.Checkbox80000.Name = "Checkbox80000";
             this.Checkbox80000.Size = new System.Drawing.Size(67, 17);
             this.Checkbox80000.TabIndex = 46;
@@ -263,7 +271,7 @@
             // Checkbox40000
             // 
             this.Checkbox40000.AutoSize = true;
-            this.Checkbox40000.Location = new System.Drawing.Point(106, 196);
+            this.Checkbox40000.Location = new System.Drawing.Point(161, 104);
             this.Checkbox40000.Name = "Checkbox40000";
             this.Checkbox40000.Size = new System.Drawing.Size(67, 17);
             this.Checkbox40000.TabIndex = 45;
@@ -274,7 +282,7 @@
             // Checkbox20000
             // 
             this.Checkbox20000.AutoSize = true;
-            this.Checkbox20000.Location = new System.Drawing.Point(106, 173);
+            this.Checkbox20000.Location = new System.Drawing.Point(161, 81);
             this.Checkbox20000.Name = "Checkbox20000";
             this.Checkbox20000.Size = new System.Drawing.Size(67, 17);
             this.Checkbox20000.TabIndex = 44;
@@ -285,7 +293,7 @@
             // Checkbox10000
             // 
             this.Checkbox10000.AutoSize = true;
-            this.Checkbox10000.Location = new System.Drawing.Point(106, 150);
+            this.Checkbox10000.Location = new System.Drawing.Point(161, 58);
             this.Checkbox10000.Name = "Checkbox10000";
             this.Checkbox10000.Size = new System.Drawing.Size(67, 17);
             this.Checkbox10000.TabIndex = 43;
@@ -296,7 +304,7 @@
             // Checkbox8000
             // 
             this.Checkbox8000.AutoSize = true;
-            this.Checkbox8000.Location = new System.Drawing.Point(106, 127);
+            this.Checkbox8000.Location = new System.Drawing.Point(100, 219);
             this.Checkbox8000.Name = "Checkbox8000";
             this.Checkbox8000.Size = new System.Drawing.Size(61, 17);
             this.Checkbox8000.TabIndex = 42;
@@ -307,7 +315,7 @@
             // Checkbox4000
             // 
             this.Checkbox4000.AutoSize = true;
-            this.Checkbox4000.Location = new System.Drawing.Point(106, 104);
+            this.Checkbox4000.Location = new System.Drawing.Point(100, 196);
             this.Checkbox4000.Name = "Checkbox4000";
             this.Checkbox4000.Size = new System.Drawing.Size(61, 17);
             this.Checkbox4000.TabIndex = 41;
@@ -318,7 +326,7 @@
             // Checkbox2000
             // 
             this.Checkbox2000.AutoSize = true;
-            this.Checkbox2000.Location = new System.Drawing.Point(106, 81);
+            this.Checkbox2000.Location = new System.Drawing.Point(100, 173);
             this.Checkbox2000.Name = "Checkbox2000";
             this.Checkbox2000.Size = new System.Drawing.Size(61, 17);
             this.Checkbox2000.TabIndex = 40;
@@ -329,7 +337,7 @@
             // Checkbox1000
             // 
             this.Checkbox1000.AutoSize = true;
-            this.Checkbox1000.Location = new System.Drawing.Point(106, 58);
+            this.Checkbox1000.Location = new System.Drawing.Point(100, 150);
             this.Checkbox1000.Name = "Checkbox1000";
             this.Checkbox1000.Size = new System.Drawing.Size(61, 17);
             this.Checkbox1000.TabIndex = 39;
@@ -337,11 +345,107 @@
             this.Checkbox1000.UseVisualStyleBackColor = true;
             this.Checkbox1000.CheckedChanged += new System.EventHandler(this.Checkbox1000_CheckedChanged);
             // 
+            // Checkbox80000000
+            // 
+            this.Checkbox80000000.AutoSize = true;
+            this.Checkbox80000000.Location = new System.Drawing.Point(234, 219);
+            this.Checkbox80000000.Name = "Checkbox80000000";
+            this.Checkbox80000000.Size = new System.Drawing.Size(85, 17);
+            this.Checkbox80000000.TabIndex = 58;
+            this.Checkbox80000000.Text = "0x80000000";
+            this.Checkbox80000000.UseVisualStyleBackColor = true;
+            this.Checkbox80000000.CheckedChanged += new System.EventHandler(this.Checkbox80000000_CheckedChanged);
+            // 
+            // Checkbox40000000
+            // 
+            this.Checkbox40000000.AutoSize = true;
+            this.Checkbox40000000.Location = new System.Drawing.Point(234, 196);
+            this.Checkbox40000000.Name = "Checkbox40000000";
+            this.Checkbox40000000.Size = new System.Drawing.Size(85, 17);
+            this.Checkbox40000000.TabIndex = 57;
+            this.Checkbox40000000.Text = "0x40000000";
+            this.Checkbox40000000.UseVisualStyleBackColor = true;
+            this.Checkbox40000000.CheckedChanged += new System.EventHandler(this.Checkbox40000000_CheckedChanged);
+            // 
+            // Checkbox20000000
+            // 
+            this.Checkbox20000000.AutoSize = true;
+            this.Checkbox20000000.Location = new System.Drawing.Point(234, 173);
+            this.Checkbox20000000.Name = "Checkbox20000000";
+            this.Checkbox20000000.Size = new System.Drawing.Size(85, 17);
+            this.Checkbox20000000.TabIndex = 56;
+            this.Checkbox20000000.Text = "0x20000000";
+            this.Checkbox20000000.UseVisualStyleBackColor = true;
+            this.Checkbox20000000.CheckedChanged += new System.EventHandler(this.Checkbox20000000_CheckedChanged);
+            // 
+            // Checkbox10000000
+            // 
+            this.Checkbox10000000.AutoSize = true;
+            this.Checkbox10000000.Location = new System.Drawing.Point(234, 150);
+            this.Checkbox10000000.Name = "Checkbox10000000";
+            this.Checkbox10000000.Size = new System.Drawing.Size(85, 17);
+            this.Checkbox10000000.TabIndex = 55;
+            this.Checkbox10000000.Text = "0x10000000";
+            this.Checkbox10000000.UseVisualStyleBackColor = true;
+            this.Checkbox10000000.CheckedChanged += new System.EventHandler(this.Checkbox10000000_CheckedChanged);
+            // 
+            // Checkbox8000000
+            // 
+            this.Checkbox8000000.AutoSize = true;
+            this.Checkbox8000000.Location = new System.Drawing.Point(234, 127);
+            this.Checkbox8000000.Name = "Checkbox8000000";
+            this.Checkbox8000000.Size = new System.Drawing.Size(79, 17);
+            this.Checkbox8000000.TabIndex = 54;
+            this.Checkbox8000000.Text = "0x8000000";
+            this.Checkbox8000000.UseVisualStyleBackColor = true;
+            this.Checkbox8000000.CheckedChanged += new System.EventHandler(this.Checkbox8000000_CheckedChanged);
+            // 
+            // Checkbox4000000
+            // 
+            this.Checkbox4000000.AutoSize = true;
+            this.Checkbox4000000.Location = new System.Drawing.Point(234, 104);
+            this.Checkbox4000000.Name = "Checkbox4000000";
+            this.Checkbox4000000.Size = new System.Drawing.Size(79, 17);
+            this.Checkbox4000000.TabIndex = 53;
+            this.Checkbox4000000.Text = "0x4000000";
+            this.Checkbox4000000.UseVisualStyleBackColor = true;
+            this.Checkbox4000000.CheckedChanged += new System.EventHandler(this.Checkbox4000000_CheckedChanged);
+            // 
+            // Checkbox2000000
+            // 
+            this.Checkbox2000000.AutoSize = true;
+            this.Checkbox2000000.Location = new System.Drawing.Point(234, 81);
+            this.Checkbox2000000.Name = "Checkbox2000000";
+            this.Checkbox2000000.Size = new System.Drawing.Size(79, 17);
+            this.Checkbox2000000.TabIndex = 52;
+            this.Checkbox2000000.Text = "0x2000000";
+            this.Checkbox2000000.UseVisualStyleBackColor = true;
+            this.Checkbox2000000.CheckedChanged += new System.EventHandler(this.Checkbox2000000_CheckedChanged);
+            // 
+            // Checkbox1000000
+            // 
+            this.Checkbox1000000.AutoSize = true;
+            this.Checkbox1000000.Location = new System.Drawing.Point(234, 58);
+            this.Checkbox1000000.Name = "Checkbox1000000";
+            this.Checkbox1000000.Size = new System.Drawing.Size(79, 17);
+            this.Checkbox1000000.TabIndex = 51;
+            this.Checkbox1000000.Text = "0x1000000";
+            this.Checkbox1000000.UseVisualStyleBackColor = true;
+            this.Checkbox1000000.CheckedChanged += new System.EventHandler(this.Checkbox1000000_CheckedChanged);
+            // 
             // FlagCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 349);
+            this.ClientSize = new System.Drawing.Size(371, 278);
+            this.Controls.Add(this.Checkbox80000000);
+            this.Controls.Add(this.Checkbox40000000);
+            this.Controls.Add(this.Checkbox20000000);
+            this.Controls.Add(this.Checkbox10000000);
+            this.Controls.Add(this.Checkbox8000000);
+            this.Controls.Add(this.Checkbox4000000);
+            this.Controls.Add(this.Checkbox2000000);
+            this.Controls.Add(this.Checkbox1000000);
             this.Controls.Add(this.Checkbox800000);
             this.Controls.Add(this.Checkbox400000);
             this.Controls.Add(this.Checkbox200000);
@@ -405,6 +509,14 @@
         private System.Windows.Forms.CheckBox Checkbox4000;
         private System.Windows.Forms.CheckBox Checkbox2000;
         private System.Windows.Forms.CheckBox Checkbox1000;
+        private System.Windows.Forms.CheckBox Checkbox80000000;
+        private System.Windows.Forms.CheckBox Checkbox40000000;
+        private System.Windows.Forms.CheckBox Checkbox20000000;
+        private System.Windows.Forms.CheckBox Checkbox10000000;
+        private System.Windows.Forms.CheckBox Checkbox8000000;
+        private System.Windows.Forms.CheckBox Checkbox4000000;
+        private System.Windows.Forms.CheckBox Checkbox2000000;
+        private System.Windows.Forms.CheckBox Checkbox1000000;
     }
 }
 

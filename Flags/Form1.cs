@@ -17,8 +17,8 @@ namespace Flags
             InitializeComponent();
         }
 
-        int FlagFinder = 0;
-        int FlagNum = 0;
+        UInt32 FlagFinder = 0;
+        UInt32 FlagNum = 0;
         bool TextUsed = false;
         bool CheckUsed = false;
 
@@ -48,6 +48,14 @@ namespace Flags
             Checkbox200000.Checked = false;
             Checkbox400000.Checked = false;
             Checkbox800000.Checked = false;
+            Checkbox1000000.Checked = false;
+            Checkbox2000000.Checked = false;
+            Checkbox4000000.Checked = false;
+            Checkbox8000000.Checked = false;
+            Checkbox10000000.Checked = false;
+            Checkbox20000000.Checked = false;
+            Checkbox40000000.Checked = false;
+            Checkbox80000000.Checked = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -62,15 +70,55 @@ namespace Flags
                 DisableAll();
                 return;
             }
-            FlagFinder = FlagNum = Convert.ToInt32(TextboxFlag.Text);
+            FlagFinder = FlagNum = Convert.ToUInt32(TextboxFlag.Text);
             DisableAll();
 
-            if (FlagFinder > 16777215)
+            if (FlagFinder > 4294967295)
             {
                 MessageBox.Show("Number is too high");
             }
             else
             {
+                if (FlagFinder >= 2147483648)
+                {
+                    Checkbox80000000.Checked = true;
+                    FlagFinder -= 2147483648;
+                }
+                if (FlagFinder >= 1073741824)
+                {
+                    Checkbox40000000.Checked = true;
+                    FlagFinder -= 1073741824;
+                }
+                if (FlagFinder >= 536870912)
+                {
+                    Checkbox20000000.Checked = true;
+                    FlagFinder -= 536870912;
+                }
+                if (FlagFinder >= 268435456)
+                {
+                    Checkbox10000000.Checked = true;
+                    FlagFinder -= 268435456;
+                }
+                if (FlagFinder >= 134217728)
+                {
+                    Checkbox8000000.Checked = true;
+                    FlagFinder -= 134217728;
+                }
+                if (FlagFinder >= 67108864)
+                {
+                    Checkbox4000000.Checked = true;
+                    FlagFinder -= 67108864;
+                }
+                if (FlagFinder >= 33554432)
+                {
+                    Checkbox2000000.Checked = true;
+                    FlagFinder -= 33554432;
+                }
+                if (FlagFinder >= 16777216)
+                {
+                    Checkbox1000000.Checked = true;
+                    FlagFinder -= 16777216;
+                }
                 if (FlagFinder >= 8388608)
                 {
                     Checkbox800000.Checked = true;
@@ -646,6 +694,158 @@ namespace Flags
             else
             {
                 FlagNum -= 8388608;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox1000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox1000000.Checked)
+            {
+                FlagNum += 16777216;
+            }
+            else
+            {
+                FlagNum -= 16777216;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox2000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox2000000.Checked)
+            {
+                FlagNum += 33554432;
+            }
+            else
+            {
+                FlagNum -= 33554432;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox4000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox4000000.Checked)
+            {
+                FlagNum += 67108864;
+            }
+            else
+            {
+                FlagNum -= 67108864;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox8000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox8000000.Checked)
+            {
+                FlagNum += 134217728;
+            }
+            else
+            {
+                FlagNum -= 134217728;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox10000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox10000000.Checked)
+            {
+                FlagNum += 268435456;
+            }
+            else
+            {
+                FlagNum -= 268435456;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox20000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox20000000.Checked)
+            {
+                FlagNum += 536870912;
+            }
+            else
+            {
+                FlagNum -= 536870912;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox40000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox40000000.Checked)
+            {
+                FlagNum += 1073741824;
+            }
+            else
+            {
+                FlagNum -= 1073741824;
+            }
+            TextboxFlag.Text = Convert.ToString(FlagNum);
+            CheckUsed = false;
+        }
+
+        private void Checkbox80000000_CheckedChanged(object sender, EventArgs e)
+        {
+            if (TextUsed)
+            {
+                return;
+            }
+            CheckUsed = true;
+            if (Checkbox80000000.Checked)
+            {
+                FlagNum += 2147483648;
+            }
+            else
+            {
+                FlagNum -= 2147483648;
             }
             TextboxFlag.Text = Convert.ToString(FlagNum);
             CheckUsed = false;
