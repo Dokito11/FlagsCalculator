@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Flags
 {
@@ -117,12 +118,23 @@ namespace Flags
             }
         }
 
+        bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
+            return true;
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (Convert.ToUInt64(TextboxFlag.Text) > 4294967295)
+            if (!IsDigitsOnly(TextboxFlag.Text))
             {
-                TextboxFlag.Text = "4294967295";
-                MessageBox.Show("Input cannot be higher than 4,294,967,295");
+                {
+                    TextboxFlag.Text = "";
+                }
             }
         }
 
@@ -295,23 +307,27 @@ namespace Flags
 
             TextUsed = true;
 
-            InitFlags();
+            
 
             // prevents crash when textbox is empty and clears all checkboxes (temp fix)
             if (TextboxFlag.Text == "")
             {
-                return;
+                TextboxFlag.Text = "0";
+            }
+
+            if (Convert.ToUInt64(TextboxFlag.Text) > 4294967295)
+            {
+                TextboxFlag.Text = "4294967295";
+            }
+
+            if (Convert.ToInt64(TextboxFlag.Text) < 0)
+            {
+                TextboxFlag.Text = "0";
             }
 
             FlagFinder = FlagNum = Convert.ToUInt32(TextboxFlag.Text);
             InitFlags();
 
-            if (FlagFinder > 4294967295)
-            {
-                MessageBox.Show("Number is too high");
-            }
-            else
-            {
                 if (FlagFinder >= 2147483648)
                 {
                     ListFlags[31].SetActive(Checkbox80000000, true);
@@ -476,7 +492,6 @@ namespace Flags
                 DisplayFlags();
 
                 TextUsed = false;
-            }
         }
     }
 }
