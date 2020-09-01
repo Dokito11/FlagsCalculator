@@ -13,11 +13,6 @@ namespace Flags
 {
     public partial class FlagCalculator : Form
     {
-        public FlagCalculator()
-        {
-            InitializeComponent();
-            InitFlags();
-        }
 
         private UInt32 FlagFinder = 0;
         private UInt32 FlagNum = 0;
@@ -27,40 +22,46 @@ namespace Flags
         private Flag[] ListFlags = new Flag[32];
         private int flagCount = 0;
 
+        public FlagCalculator()
+        {
+            InitializeComponent();
+            InitFlags();
+        }
+
         private void InitFlags()
         {
-            FlagSetup(Checkbox1, 1, false, "0x1");
-            FlagSetup(Checkbox2, 2, false, "0x2");
-            FlagSetup(Checkbox4, 4, false, "0x4");
-            FlagSetup(Checkbox8, 8, false, "0x8");
-            FlagSetup(Checkbox10, 10, false, "0x10");
-            FlagSetup(Checkbox20, 20, false, "0x20");
-            FlagSetup(Checkbox40, 40, false, "0x40");
-            FlagSetup(Checkbox80, 80, false, "0x80");
-            FlagSetup(Checkbox100, 100, false, "0x100");
-            FlagSetup(Checkbox200, 200, false, "0x200");
-            FlagSetup(Checkbox400, 400, false, "0x400");
-            FlagSetup(Checkbox800, 800, false, "0x800");
-            FlagSetup(Checkbox1000, 1000, false, "0x1000");
-            FlagSetup(Checkbox2000, 2000, false, "0x2000");
-            FlagSetup(Checkbox4000, 4000, false, "0x4000");
-            FlagSetup(Checkbox8000, 8000, false, "0x8000");
-            FlagSetup(Checkbox10000, 10000, false, "0x10000");
-            FlagSetup(Checkbox20000, 20000, false, "0x20000");
-            FlagSetup(Checkbox40000, 40000, false, "0x40000");
-            FlagSetup(Checkbox80000, 80000, false, "0x80000");
-            FlagSetup(Checkbox100000, 100000, false, "0x100000");
-            FlagSetup(Checkbox200000, 200000, false, "0x200000");
-            FlagSetup(Checkbox400000, 400000, false, "0x400000");
-            FlagSetup(Checkbox800000, 800000, false, "0x800000");
-            FlagSetup(Checkbox1000000, 1000000, false, "0x1000000");
-            FlagSetup(Checkbox2000000, 2000000, false, "0x2000000");
-            FlagSetup(Checkbox4000000, 4000000, false, "0x4000000");
-            FlagSetup(Checkbox8000000, 8000000, false, "0x8000000");
-            FlagSetup(Checkbox10000000, 10000000, false, "0x10000000");
-            FlagSetup(Checkbox20000000, 20000000, false, "0x20000000");
-            FlagSetup(Checkbox40000000, 40000000, false, "0x40000000");
-            FlagSetup(Checkbox80000000, 80000000, false, "0x80000000");
+            FlagSetup(Checkbox1, false, "0x1");
+            FlagSetup(Checkbox2, false, "0x2");
+            FlagSetup(Checkbox4, false, "0x4");
+            FlagSetup(Checkbox8, false, "0x8");
+            FlagSetup(Checkbox10, false, "0x10");
+            FlagSetup(Checkbox20, false, "0x20");
+            FlagSetup(Checkbox40, false, "0x40");
+            FlagSetup(Checkbox80, false, "0x80");
+            FlagSetup(Checkbox100, false, "0x100");
+            FlagSetup(Checkbox200, false, "0x200");
+            FlagSetup(Checkbox400, false, "0x400");
+            FlagSetup(Checkbox800, false, "0x800");
+            FlagSetup(Checkbox1000, false, "0x1000");
+            FlagSetup(Checkbox2000, false, "0x2000");
+            FlagSetup(Checkbox4000, false, "0x4000");
+            FlagSetup(Checkbox8000, false, "0x8000");
+            FlagSetup(Checkbox10000, false, "0x10000");
+            FlagSetup(Checkbox20000, false, "0x20000");
+            FlagSetup(Checkbox40000, false, "0x40000");
+            FlagSetup(Checkbox80000, false, "0x80000");
+            FlagSetup(Checkbox100000, false, "0x100000");
+            FlagSetup(Checkbox200000, false, "0x200000");
+            FlagSetup(Checkbox400000, false, "0x400000");
+            FlagSetup(Checkbox800000, false, "0x800000");
+            FlagSetup(Checkbox1000000, false, "0x1000000");
+            FlagSetup(Checkbox2000000, false, "0x2000000");
+            FlagSetup(Checkbox4000000, false, "0x4000000");
+            FlagSetup(Checkbox8000000, false, "0x8000000");
+            FlagSetup(Checkbox10000000, false, "0x10000000");
+            FlagSetup(Checkbox20000000, false, "0x20000000");
+            FlagSetup(Checkbox40000000, false, "0x40000000");
+            FlagSetup(Checkbox80000000, false, "0x80000000");
             for (int i = 0; i < ListFlags.Count(); i++)
             {
                 ListFlags[i].Active = false;
@@ -71,13 +72,13 @@ namespace Flags
             }
         }
 
-        public void FlagSetup(CheckBox flagCheckbox, int id, bool active, string flagString)
+        public void FlagSetup(CheckBox flagCheckbox, bool active, string flagString)
         {
             flagCheckbox.Checked = false;
 
             if (init)
             {
-                Flag newFlag = new Flag(id, active, flagString);
+                Flag newFlag = new Flag(active, flagString, flagCheckbox);
                 ListFlags[flagCount] = newFlag;
                 flagCount++;
             }
@@ -90,7 +91,7 @@ namespace Flags
             {
                 return;
             }
-            CheckUsed = true;
+            //CheckUsed = true;
             if (checkbox.Checked)
             {
                 ListFlags[pos].Active = true;
@@ -114,26 +115,6 @@ namespace Flags
                 if (ListFlags[i].Active)
                 {
                     ListboxFlags.Items.Add(ListFlags[i].FlagString);
-                }
-            }
-        }
-
-        bool IsDigitsOnly(string str)
-        {
-            foreach (char c in str)
-            {
-                if (c < '0' || c > '9')
-                    return false;
-            }
-            return true;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (!IsDigitsOnly(TextboxFlag.Text))
-            {
-                {
-                    TextboxFlag.Text = "";
                 }
             }
         }
@@ -300,21 +281,12 @@ namespace Flags
 
         private void CheckButton_Click(object sender, EventArgs e)
         {
-            if (CheckUsed)
-            {
-                return;
-            }
+            
 
             TextUsed = true;
 
             
-
-            // prevents crash when textbox is empty and clears all checkboxes (temp fix)
-            if (TextboxFlag.Text == "")
-            {
-                TextboxFlag.Text = "0";
-            }
-
+            
             if (Convert.ToUInt64(TextboxFlag.Text) > 4294967295)
             {
                 TextboxFlag.Text = "4294967295";
@@ -330,168 +302,176 @@ namespace Flags
 
                 if (FlagFinder >= 2147483648)
                 {
-                    ListFlags[31].SetActive(Checkbox80000000, true);
+                    ListFlags[31].SetActive(true);
                     FlagFinder -= 2147483648;
                 }
                 if (FlagFinder >= 1073741824)
                 {
-                    ListFlags[30].SetActive(Checkbox40000000, true);
+                    ListFlags[30].SetActive(true);
                     FlagFinder -= 1073741824;
                 }
                 if (FlagFinder >= 536870912)
                 {
-                    ListFlags[29].SetActive(Checkbox20000000, true);
+                    ListFlags[29].SetActive(true);
                     FlagFinder -= 536870912;
                 }
                 if (FlagFinder >= 268435456)
                 {
-                    ListFlags[28].SetActive(Checkbox10000000, true);
+                    ListFlags[28].SetActive(true);
                     FlagFinder -= 268435456;
                 }
                 if (FlagFinder >= 134217728)
                 {
-                    ListFlags[27].SetActive(Checkbox8000000, true);
+                    ListFlags[27].SetActive(true);
                     FlagFinder -= 134217728;
                 }
                 if (FlagFinder >= 67108864)
                 {
-                    ListFlags[26].SetActive(Checkbox4000000, true);
+                    ListFlags[26].SetActive(true);
                     FlagFinder -= 67108864;
                 }
                 if (FlagFinder >= 33554432)
                 {
-                    ListFlags[25].SetActive(Checkbox2000000, true);
+                    ListFlags[25].SetActive(true);
                     FlagFinder -= 33554432;
                 }
                 if (FlagFinder >= 16777216)
                 {
-                    ListFlags[24].SetActive(Checkbox1000000, true);
+                    ListFlags[24].SetActive(true);
                     FlagFinder -= 16777216;
                 }
                 if (FlagFinder >= 8388608)
                 {
-                    ListFlags[23].SetActive(Checkbox800000, true);
+                    ListFlags[23].SetActive(true);
                     FlagFinder -= 8388608;
                 }
                 if (FlagFinder >= 4194304)
                 {
-                    ListFlags[22].SetActive(Checkbox400000, true);
+                    ListFlags[22].SetActive(true);
                     FlagFinder -= 4194304;
                 }
                 if (FlagFinder >= 2097152)
                 {
-                    ListFlags[21].SetActive(Checkbox200000, true);
+                    ListFlags[21].SetActive(true);
                     FlagFinder -= 2097152;
                 }
                 if (FlagFinder >= 1048576)
                 {
-                    ListFlags[20].SetActive(Checkbox100000, true);
+                    ListFlags[20].SetActive(true);
                     FlagFinder -= 1048576;
                 }
                 if (FlagFinder >= 524288)
                 {
-                    ListFlags[19].SetActive(Checkbox80000, true);
+                    ListFlags[19].SetActive(true);
                     FlagFinder -= 524288;
                 }
                 if (FlagFinder >= 262144)
                 {
-                    ListFlags[18].SetActive(Checkbox40000, true);
+                    ListFlags[18].SetActive(true);
                     FlagFinder -= 262144;
                 }
                 if (FlagFinder >= 131072)
                 {
-                    ListFlags[17].SetActive(Checkbox20000, true);
+                    ListFlags[17].SetActive(true);
                     FlagFinder -= 131072;
                 }
                 if (FlagFinder >= 65536)
                 {
-                    ListFlags[16].SetActive(Checkbox10000, true);
+                    ListFlags[16].SetActive(true);
                     FlagFinder -= 65536;
                 }
                 if (FlagFinder >= 32768)
                 {
-                    ListFlags[15].SetActive(Checkbox8000, true);
+                    ListFlags[15].SetActive(true);
                     FlagFinder -= 32768;
                 }
                 if (FlagFinder >= 16384)
                 {
-                    ListFlags[14].SetActive(Checkbox4000, true);
+                    ListFlags[14].SetActive(true);
                     FlagFinder -= 16384;
                 }
                 if (FlagFinder >= 8192)
                 {
-                    ListFlags[13].SetActive(Checkbox2000, true);
+                    ListFlags[13].SetActive(true);
                     FlagFinder -= 8192;
                 }
                 if (FlagFinder >= 4096)
                 {
-                    ListFlags[12].SetActive(Checkbox1000, true);
+                    ListFlags[12].SetActive(true);
                     FlagFinder -= 4096;
                 }
                 if (FlagFinder >= 2048)
                 {
-                    ListFlags[11].SetActive(Checkbox800, true);
+                    ListFlags[11].SetActive(true);
                     FlagFinder -= 2048;
                 }
                 if (FlagFinder >= 1024)
                 {
-                    ListFlags[10].SetActive(Checkbox400, true);
+                    ListFlags[10].SetActive(true);
                     FlagFinder -= 1024;
                 }
                 if (FlagFinder >= 512)
                 {
-                    ListFlags[9].SetActive(Checkbox200, true);
+                    ListFlags[9].SetActive(true);
                     FlagFinder -= 512;
                 }
                 if (FlagFinder >= 256)
                 {
-                    ListFlags[8].SetActive(Checkbox100, true);
+                    ListFlags[8].SetActive(true);
                     FlagFinder -= 256;
                 }
                 if (FlagFinder >= 128)
                 {
-                    ListFlags[7].SetActive(Checkbox80, true);
+                    ListFlags[7].SetActive(true);
                     FlagFinder -= 128;
                 }
                 if (FlagFinder >= 64)
                 {
-                    ListFlags[6].SetActive(Checkbox40, true);
+                    ListFlags[6].SetActive(true);
                     FlagFinder -= 64;
                 }
                 if (FlagFinder >= 32)
                 {
-                    ListFlags[5].SetActive(Checkbox20, true);
+                    ListFlags[5].SetActive(true);
                     FlagFinder -= 32;
                 }
                 if (FlagFinder >= 16)
                 {
-                    ListFlags[4].SetActive(Checkbox10, true);
+                    ListFlags[4].SetActive(true);
                     FlagFinder -= 16;
                 }
                 if (FlagFinder >= 8)
                 {
-                    ListFlags[3].SetActive(Checkbox8, true);
+                    ListFlags[3].SetActive(true);
                     FlagFinder -= 8;
                 }
                 if (FlagFinder >= 4)
                 {
-                    ListFlags[2].SetActive(Checkbox4, true);
+                    ListFlags[2].SetActive(true);
                     FlagFinder -= 4;
                 }
                 if (FlagFinder >= 2)
                 {
-                    ListFlags[1].SetActive(Checkbox2, true);
+                    ListFlags[1].SetActive(true);
                     FlagFinder -= 2;
                 }
                 if (FlagFinder >= 1)
                 {
-                    ListFlags[0].SetActive(Checkbox1, true);
+                    ListFlags[0].SetActive(true);
                     FlagFinder -= 1;
                 }
 
                 DisplayFlags();
 
                 TextUsed = false;
+        }
+
+        private void TextboxFlag_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

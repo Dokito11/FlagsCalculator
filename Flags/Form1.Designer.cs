@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlagCalculator));
             this.label1 = new System.Windows.Forms.Label();
             this.TextboxFlag = new System.Windows.Forms.TextBox();
             this.Checkbox1 = new System.Windows.Forms.CheckBox();
@@ -81,7 +82,7 @@
             this.TextboxFlag.Name = "TextboxFlag";
             this.TextboxFlag.Size = new System.Drawing.Size(100, 20);
             this.TextboxFlag.TabIndex = 1;
-            this.TextboxFlag.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.TextboxFlag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextboxFlag_KeyPress);
             // 
             // Checkbox1
             // 
@@ -496,8 +497,8 @@
             this.Controls.Add(this.TextboxFlag);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FlagCalculator";
-            this.ShowIcon = false;
             this.Text = "Flag Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
