@@ -281,7 +281,10 @@ namespace Flags
 
         private void CheckButton_Click(object sender, EventArgs e)
         {
-            
+            if (TextboxFlag.Text == "")
+            {
+                TextboxFlag.Text = "0";
+            }
 
             TextUsed = true;
 
