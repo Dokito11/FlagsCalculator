@@ -18,3 +18,13 @@ C:\Users\Alex\Desktop\Flags\Flags\obj\Debug\Flags.csproj.GenerateResource.cache
 C:\Users\Alex\Desktop\Flags\Flags\obj\Debug\Flags.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Desktop\Flags\Flags\obj\Debug\Flags.exe
 C:\Users\Alex\Desktop\Flags\Flags\obj\Debug\Flags.pdb
+D:\Bureau\FlagsCalculator\Flags\bin\Debug\Flags.exe.config
+D:\Bureau\FlagsCalculator\Flags\bin\Debug\Flags.exe
+D:\Bureau\FlagsCalculator\Flags\bin\Debug\Flags.pdb
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.csproj.AssemblyReference.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.FlagCalculator.resources
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.Properties.Resources.resources
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.csproj.GenerateResource.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.csproj.CoreCompileInputs.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.exe
+D:\Bureau\FlagsCalculator\Flags\obj\Debug\Flags.pdb

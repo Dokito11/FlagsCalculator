@@ -94,7 +94,7 @@
             this.Checkbox1.TabIndex = 27;
             this.Checkbox1.Text = "0x1";
             this.Checkbox1.UseVisualStyleBackColor = true;
-            this.Checkbox1.CheckedChanged += new System.EventHandler(this.Checkbox1_CheckedChanged);
+            this.Checkbox1.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox2
             // 
@@ -105,7 +105,7 @@
             this.Checkbox2.TabIndex = 28;
             this.Checkbox2.Text = "0x2";
             this.Checkbox2.UseVisualStyleBackColor = true;
-            this.Checkbox2.CheckedChanged += new System.EventHandler(this.Checkbox2_CheckedChanged);
+            this.Checkbox2.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox4
             // 
@@ -116,7 +116,7 @@
             this.Checkbox4.TabIndex = 29;
             this.Checkbox4.Text = "0x4";
             this.Checkbox4.UseVisualStyleBackColor = true;
-            this.Checkbox4.CheckedChanged += new System.EventHandler(this.Checkbox4_CheckedChanged);
+            this.Checkbox4.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox8
             // 
@@ -127,7 +127,7 @@
             this.Checkbox8.TabIndex = 30;
             this.Checkbox8.Text = "0x8";
             this.Checkbox8.UseVisualStyleBackColor = true;
-            this.Checkbox8.CheckedChanged += new System.EventHandler(this.Checkbox8_CheckedChanged);
+            this.Checkbox8.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox80
             // 
@@ -138,7 +138,7 @@
             this.Checkbox80.TabIndex = 34;
             this.Checkbox80.Text = "0x80";
             this.Checkbox80.UseVisualStyleBackColor = true;
-            this.Checkbox80.CheckedChanged += new System.EventHandler(this.Checkbox80_CheckedChanged);
+            this.Checkbox80.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox40
             // 
@@ -149,7 +149,7 @@
             this.Checkbox40.TabIndex = 33;
             this.Checkbox40.Text = "0x40";
             this.Checkbox40.UseVisualStyleBackColor = true;
-            this.Checkbox40.CheckedChanged += new System.EventHandler(this.Checkbox40_CheckedChanged);
+            this.Checkbox40.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox20
             // 
@@ -160,7 +160,7 @@
             this.Checkbox20.TabIndex = 32;
             this.Checkbox20.Text = "0x20";
             this.Checkbox20.UseVisualStyleBackColor = true;
-            this.Checkbox20.CheckedChanged += new System.EventHandler(this.Checkbox20_CheckedChanged);
+            this.Checkbox20.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox10
             // 
@@ -171,7 +171,7 @@
             this.Checkbox10.TabIndex = 31;
             this.Checkbox10.Text = "0x10";
             this.Checkbox10.UseVisualStyleBackColor = true;
-            this.Checkbox10.CheckedChanged += new System.EventHandler(this.Checkbox10_CheckedChanged);
+            this.Checkbox10.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox800
             // 
@@ -182,7 +182,7 @@
             this.Checkbox800.TabIndex = 38;
             this.Checkbox800.Text = "0x800";
             this.Checkbox800.UseVisualStyleBackColor = true;
-            this.Checkbox800.CheckedChanged += new System.EventHandler(this.Checkbox800_CheckedChanged);
+            this.Checkbox800.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox400
             // 
@@ -193,7 +193,7 @@
             this.Checkbox400.TabIndex = 37;
             this.Checkbox400.Text = "0x400";
             this.Checkbox400.UseVisualStyleBackColor = true;
-            this.Checkbox400.CheckedChanged += new System.EventHandler(this.Checkbox400_CheckedChanged);
+            this.Checkbox400.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox200
             // 
@@ -204,7 +204,7 @@
             this.Checkbox200.TabIndex = 36;
             this.Checkbox200.Text = "0x200";
             this.Checkbox200.UseVisualStyleBackColor = true;
-            this.Checkbox200.CheckedChanged += new System.EventHandler(this.Checkbox200_CheckedChanged);
+            this.Checkbox200.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox100
             // 
@@ -215,7 +215,7 @@
             this.Checkbox100.TabIndex = 35;
             this.Checkbox100.Text = "0x100";
             this.Checkbox100.UseVisualStyleBackColor = true;
-            this.Checkbox100.CheckedChanged += new System.EventHandler(this.Checkbox100_CheckedChanged);
+            this.Checkbox100.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox800000
             // 
@@ -226,7 +226,7 @@
             this.Checkbox800000.TabIndex = 50;
             this.Checkbox800000.Text = "0x800000";
             this.Checkbox800000.UseVisualStyleBackColor = true;
-            this.Checkbox800000.CheckedChanged += new System.EventHandler(this.Checkbox800000_CheckedChanged);
+            this.Checkbox800000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox400000
             // 
@@ -237,7 +237,7 @@
             this.Checkbox400000.TabIndex = 49;
             this.Checkbox400000.Text = "0x400000";
             this.Checkbox400000.UseVisualStyleBackColor = true;
-            this.Checkbox400000.CheckedChanged += new System.EventHandler(this.Checkbox400000_CheckedChanged);
+            this.Checkbox400000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox200000
             // 
@@ -248,7 +248,7 @@
             this.Checkbox200000.TabIndex = 48;
             this.Checkbox200000.Text = "0x200000";
             this.Checkbox200000.UseVisualStyleBackColor = true;
-            this.Checkbox200000.CheckedChanged += new System.EventHandler(this.Checkbox200000_CheckedChanged);
+            this.Checkbox200000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox100000
             // 
@@ -259,7 +259,7 @@
             this.Checkbox100000.TabIndex = 47;
             this.Checkbox100000.Text = "0x100000";
             this.Checkbox100000.UseVisualStyleBackColor = true;
-            this.Checkbox100000.CheckedChanged += new System.EventHandler(this.Checkbox100000_CheckedChanged);
+            this.Checkbox100000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox80000
             // 
@@ -270,7 +270,7 @@
             this.Checkbox80000.TabIndex = 46;
             this.Checkbox80000.Text = "0x80000";
             this.Checkbox80000.UseVisualStyleBackColor = true;
-            this.Checkbox80000.CheckedChanged += new System.EventHandler(this.Checkbox80000_CheckedChanged);
+            this.Checkbox80000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox40000
             // 
@@ -281,7 +281,7 @@
             this.Checkbox40000.TabIndex = 45;
             this.Checkbox40000.Text = "0x40000";
             this.Checkbox40000.UseVisualStyleBackColor = true;
-            this.Checkbox40000.CheckedChanged += new System.EventHandler(this.Checkbox40000_CheckedChanged);
+            this.Checkbox40000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox20000
             // 
@@ -292,7 +292,7 @@
             this.Checkbox20000.TabIndex = 44;
             this.Checkbox20000.Text = "0x20000";
             this.Checkbox20000.UseVisualStyleBackColor = true;
-            this.Checkbox20000.CheckedChanged += new System.EventHandler(this.Checkbox20000_CheckedChanged);
+            this.Checkbox20000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox10000
             // 
@@ -303,7 +303,7 @@
             this.Checkbox10000.TabIndex = 43;
             this.Checkbox10000.Text = "0x10000";
             this.Checkbox10000.UseVisualStyleBackColor = true;
-            this.Checkbox10000.CheckedChanged += new System.EventHandler(this.Checkbox10000_CheckedChanged);
+            this.Checkbox10000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox8000
             // 
@@ -314,7 +314,7 @@
             this.Checkbox8000.TabIndex = 42;
             this.Checkbox8000.Text = "0x8000";
             this.Checkbox8000.UseVisualStyleBackColor = true;
-            this.Checkbox8000.CheckedChanged += new System.EventHandler(this.Checkbox8000_CheckedChanged);
+            this.Checkbox8000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox4000
             // 
@@ -325,7 +325,7 @@
             this.Checkbox4000.TabIndex = 41;
             this.Checkbox4000.Text = "0x4000";
             this.Checkbox4000.UseVisualStyleBackColor = true;
-            this.Checkbox4000.CheckedChanged += new System.EventHandler(this.Checkbox4000_CheckedChanged);
+            this.Checkbox4000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox2000
             // 
@@ -336,7 +336,7 @@
             this.Checkbox2000.TabIndex = 40;
             this.Checkbox2000.Text = "0x2000";
             this.Checkbox2000.UseVisualStyleBackColor = true;
-            this.Checkbox2000.CheckedChanged += new System.EventHandler(this.Checkbox2000_CheckedChanged);
+            this.Checkbox2000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox1000
             // 
@@ -347,7 +347,7 @@
             this.Checkbox1000.TabIndex = 39;
             this.Checkbox1000.Text = "0x1000";
             this.Checkbox1000.UseVisualStyleBackColor = true;
-            this.Checkbox1000.CheckedChanged += new System.EventHandler(this.Checkbox1000_CheckedChanged);
+            this.Checkbox1000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox80000000
             // 
@@ -358,7 +358,7 @@
             this.Checkbox80000000.TabIndex = 58;
             this.Checkbox80000000.Text = "0x80000000";
             this.Checkbox80000000.UseVisualStyleBackColor = true;
-            this.Checkbox80000000.CheckedChanged += new System.EventHandler(this.Checkbox80000000_CheckedChanged);
+            this.Checkbox80000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox40000000
             // 
@@ -369,7 +369,7 @@
             this.Checkbox40000000.TabIndex = 57;
             this.Checkbox40000000.Text = "0x40000000";
             this.Checkbox40000000.UseVisualStyleBackColor = true;
-            this.Checkbox40000000.CheckedChanged += new System.EventHandler(this.Checkbox40000000_CheckedChanged);
+            this.Checkbox40000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox20000000
             // 
@@ -380,7 +380,7 @@
             this.Checkbox20000000.TabIndex = 56;
             this.Checkbox20000000.Text = "0x20000000";
             this.Checkbox20000000.UseVisualStyleBackColor = true;
-            this.Checkbox20000000.CheckedChanged += new System.EventHandler(this.Checkbox20000000_CheckedChanged);
+            this.Checkbox20000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox10000000
             // 
@@ -391,7 +391,7 @@
             this.Checkbox10000000.TabIndex = 55;
             this.Checkbox10000000.Text = "0x10000000";
             this.Checkbox10000000.UseVisualStyleBackColor = true;
-            this.Checkbox10000000.CheckedChanged += new System.EventHandler(this.Checkbox10000000_CheckedChanged);
+            this.Checkbox10000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox8000000
             // 
@@ -402,7 +402,7 @@
             this.Checkbox8000000.TabIndex = 54;
             this.Checkbox8000000.Text = "0x8000000";
             this.Checkbox8000000.UseVisualStyleBackColor = true;
-            this.Checkbox8000000.CheckedChanged += new System.EventHandler(this.Checkbox8000000_CheckedChanged);
+            this.Checkbox8000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox4000000
             // 
@@ -413,7 +413,7 @@
             this.Checkbox4000000.TabIndex = 53;
             this.Checkbox4000000.Text = "0x4000000";
             this.Checkbox4000000.UseVisualStyleBackColor = true;
-            this.Checkbox4000000.CheckedChanged += new System.EventHandler(this.Checkbox4000000_CheckedChanged);
+            this.Checkbox4000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox2000000
             // 
@@ -424,7 +424,7 @@
             this.Checkbox2000000.TabIndex = 52;
             this.Checkbox2000000.Text = "0x2000000";
             this.Checkbox2000000.UseVisualStyleBackColor = true;
-            this.Checkbox2000000.CheckedChanged += new System.EventHandler(this.Checkbox2000000_CheckedChanged);
+            this.Checkbox2000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // Checkbox1000000
             // 
@@ -435,7 +435,7 @@
             this.Checkbox1000000.TabIndex = 51;
             this.Checkbox1000000.Text = "0x1000000";
             this.Checkbox1000000.UseVisualStyleBackColor = true;
-            this.Checkbox1000000.CheckedChanged += new System.EventHandler(this.Checkbox1000000_CheckedChanged);
+            this.Checkbox1000000.CheckedChanged += new System.EventHandler(this.Checkbox_CheckedChanged);
             // 
             // ListboxFlags
             // 

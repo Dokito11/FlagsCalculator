@@ -18,3 +18,13 @@ C:\Users\Alex\Desktop\Flags\Flags\obj\Release\Flags.csproj.GenerateResource.cach
 C:\Users\Alex\Desktop\Flags\Flags\obj\Release\Flags.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Desktop\Flags\Flags\obj\Release\Flags.exe
 C:\Users\Alex\Desktop\Flags\Flags\obj\Release\Flags.pdb
+D:\Bureau\FlagsCalculator\Flags\bin\Release\Flags.exe.config
+D:\Bureau\FlagsCalculator\Flags\bin\Release\Flags.exe
+D:\Bureau\FlagsCalculator\Flags\bin\Release\Flags.pdb
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.csproj.AssemblyReference.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.FlagCalculator.resources
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.Properties.Resources.resources
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.csproj.GenerateResource.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.csproj.CoreCompileInputs.cache
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.exe
+D:\Bureau\FlagsCalculator\Flags\obj\Release\Flags.pdb
